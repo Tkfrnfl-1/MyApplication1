@@ -20,6 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".numberActivity"/>
+        <activity android:name=".tableActivity"/>
     </application>
 
 </manifest>
