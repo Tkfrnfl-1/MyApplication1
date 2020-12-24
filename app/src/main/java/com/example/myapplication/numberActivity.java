@@ -36,6 +36,7 @@ public class numberActivity extends AppCompatActivity {
         String totalNumTmp=intent.getStringExtra("totalNNum");
         String ResTmp=intent.getStringExtra("Res");
         String totalHHTmp=intent.getStringExtra("totalHH");
+        String dayOf1=intent.getStringExtra("dayOf1");
 
 
         //int totalNumReal=Integer.parseInt(totalNumTmp);
@@ -47,7 +48,7 @@ public class numberActivity extends AppCompatActivity {
        int tmp=numberOfPerson;
 
 
-       for(int i=0;i<numberOfPerson;i++)
+       for(int i=0;i<numberOfPerson;i++)    // edit text hit setting
        {
            final EditText et =new EditText(getApplicationContext());
            final int width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 240, getResources().getDisplayMetrics());
@@ -76,10 +77,7 @@ public class numberActivity extends AppCompatActivity {
                 intent2.putExtra("ResTmp",ResTmp);
                 intent2.putExtra("totalHHTmp",totalHHTmp);
                 intent2.putExtra("totalNumTmp",totalNumTmp);
-
-
-
-
+                intent2.putExtra("dayOf1",dayOf1);
 
                 startActivity(intent2);
             }
